@@ -1,13 +1,27 @@
-# Python
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+
+# Environments
 .env
 
-# Data files (Too large for Git)
-data/raw_pdfs/
-data/central_chroma_db/
+# IDEs
+.vscode/
 
-# OS generated files
+# OS Files
 .DS_Store
 Thumbs.db
+
+# ==========================================
+# CUSTOM RULES FOR OUR POLICY RAG PROJECT
+# ==========================================
+
+# Do not push large PDF files to GitHub
+data/raw_pdfs/
+
+# Do not push the ChromaDB binary database to GitHub
+data/central_chroma_db/

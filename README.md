@@ -1,5 +1,3 @@
-This is your team's instruction manual. It explains the architecture and exactly what they need to do.
-
 🇧🇩 Bangladesh Policy Document Retrieval System (RAG)
 This repository contains the data processing pipeline for building a Retrieval-Augmented Generation (RAG) system for Bangladeshi Government Policy Documents across three ministries: Social Welfare, Agriculture, and Disaster Management.
 
