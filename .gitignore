@@ -1,0 +1,13 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Data files (Too large for Git)
+data/raw_pdfs/
+data/central_chroma_db/
+
+# OS generated files
+.DS_Store
+Thumbs.db
