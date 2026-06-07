@@ -47,10 +47,16 @@ def build_central_database():
 
     print(f"\n🔄 Generating embeddings for {len(all_clauses)} total clauses...")
     
-    # 4. Prepare data for ChromaDB
+       # 4. Prepare data for ChromaDB
     documents = [c['text'] for c in all_clauses]
     ids = [c['clause_id'] for c in all_clauses]
-    metadatas = [{"doc_id": c['doc_id'], "section": c['section'], "tag": c['tag']} for c in all_clauses]
+    
+    # UPDATED: Use .get() with defaults in case teammate's JSON is missing fields
+    metadatas = [{
+        "doc_id": c.get('doc_id', 'unknown_doc'),
+        "section": c.get('section', '0'),
+        "tag": c.get('tag', 'Social Welfare') # Default tag for this file
+    } for c in all_clauses]
     
     # 5. Embed and Store (Batch processing for speed and memory efficiency)
     batch_size = 500
