@@ -34,7 +34,7 @@ def build_central_database():
         return
 
     for filename in os.listdir(CENTRAL_JSONL_FOLDER):
-        if filename.endswith(".jsonl"):
+       if filename.endswith("_CLEAN.jsonl") and "(1)" not in filename: # Skip duplicates!
             print(f"📄 Reading clauses from: {filename}")
             with open(os.path.join(CENTRAL_JSONL_FOLDER, filename), 'r', encoding='utf-8') as f:
                 for line in f:
