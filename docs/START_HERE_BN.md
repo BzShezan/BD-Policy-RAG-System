@@ -1,7 +1,7 @@
 # এখানে শুরু করুন — Merged Original RAG Base
 
-১. Repository clone করে `BD-Policy-RAG-System/Unmochon_Live` folder খুলুন। Python **3.11/3.12** ব্যবহার করুন।
-২. নিজের private backup-এর `data/` folder এই `Unmochon_Live/data/` path-এ রাখুন। পুরো `chromedb/` directory, `bm25_index.pkl`, `doc_metadata.json` ও processed JSONL লাগবে। GitHub-এ এই data দেওয়া নেই। এরপর PowerShell-এ:
+১. Repository clone করে `BD-Policy-RAG-System` folder খুলুন। Python **3.11/3.12** ব্যবহার করুন।
+২. নিজের private backup-এর `data/` folder এই `BD-Policy-RAG-System/data/` path-এ রাখুন। পুরো `chromedb/` directory, `bm25_index.pkl`, `doc_metadata.json` ও processed JSONL লাগবে। GitHub-এ এই data দেওয়া নেই। এরপর PowerShell-এ:
 
 ```powershell
 py -3.12 -m venv .venv

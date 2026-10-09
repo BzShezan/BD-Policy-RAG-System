@@ -1,7 +1,2 @@
-PyMuPDF==1.24.3
-pytesseract==0.3.10
-Pillow==10.3.0
-sentence-transformers==3.0.0
-chromadb==0.5.3
-rank-bm25==0.2.2
-openai==1.30.5
+# Installs the merged application and original runtime models. Use Python 3.11/3.12.
+-e .

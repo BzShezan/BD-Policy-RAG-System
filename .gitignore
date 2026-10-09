@@ -1,38 +1,38 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# Virtual environments
-venv/
-env/
-
-# Environments
 .env
-
-# IDEs
-.vscode/
-
-# OS Files
-.DS_Store
-Thumbs.db
-
-# ==========================================
-# CUSTOM RULES FOR OUR POLICY RAG PROJECT
-# ==========================================
-
-# Do not push large PDF files to GitHub
-data/raw_pdfs/
-
-# Do not push the ChromaDB binary database to GitHub
-data/central_chroma_db/
-
-# Runtime data and credentials stay private; publish source code only.
-.venv/
-.pytest_cache/
-*.egg-info/
 .gemini_key
 .gemini_keys
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
 .database.lock
+data/update_backups/
+data/unmochon-update-*/
+data/*incoming-*/
+# Private database, datasets, metadata and model outputs stay local.
+/data/
+/incoming/
+/bundles/
+/layout_analysis/data/
+/layout_analysis/output/
+/layout_analysis/models/
+/layout_analysis/workspace/
+/chatbot/tests/*.png
+/DATE_eXTRACTION/date_report.txt
+/layout_analysis/epoch_results.txt
+/layout_analysis/not annotated in sw.txt
+/layout_analysis/output2.txt
+/layout_analysis/pipeline/train_log.txt
+/scripts/retrieval/bm25_log.txt
+/scripts/retrieval/search_test_log.txt
+/diagnostics/extract/pdf_text_check.txt
+/docs/API_SMOKE.json
+/docs/UI_HTTP_SMOKE.json
+unmochon-restore-*/
+unmochon-package-*/
+
+# Protect private data wherever future datasets are placed.
 data/
 datasets/
 incoming/
@@ -58,3 +58,9 @@ layout_analysis/workspace/
 *.gz
 *.part-*
 *.log
+*.py[cod]
+venv/
+env/
+.vscode/
+.DS_Store
+Thumbs.db
