@@ -1,0 +1,21 @@
+{
+  "data/chromedb/chroma.sqlite3": "efcc344e13a8d91783e2d7a5e1dd9b5fa8f1c5857d4a7de34cb10402bca83332",
+  "data/chromedb/9fefa135-218d-4d5d-abe1-72d37cb1b3b4/link_lists.bin": "c007a3d0a57a22bcc185feb8896988fb8c4ac5ef2775313f60680ca958cb3494",
+  "data/chromedb/9fefa135-218d-4d5d-abe1-72d37cb1b3b4/data_level0.bin": "df34742b0776f7d4b80b198689ffd955d9621cefee63b3cf215607baa7915e20",
+  "data/chromedb/9fefa135-218d-4d5d-abe1-72d37cb1b3b4/length.bin": "d246fe1e6c1456b17cd1c61daec3d8bcb8183a78770a234b91264ca774535007",
+  "data/chromedb/9fefa135-218d-4d5d-abe1-72d37cb1b3b4/header.bin": "c0cfbde937e7f640aadb5acaf202de49ab01a69f8154a8d5e7553d8191e12067",
+  "data/chromedb/9fefa135-218d-4d5d-abe1-72d37cb1b3b4/index_metadata.pickle": "f56de9decf247f830ce98f9ab6c399c6a9520a63bb97fac01b3d324d07a1df90",
+  "data/chromedb/c205380f-fa6b-43ea-abac-ed4ead44fb58/link_lists.bin": "3cee22c1f96acc8f5e9a5b5ce9686b530b3e3ebe875d14ff10cfebd784ac0983",
+  "data/chromedb/c205380f-fa6b-43ea-abac-ed4ead44fb58/data_level0.bin": "eff639aff36d268b5e08c977a849e1d299172a0e525527024a22869fe7a71630",
+  "data/chromedb/c205380f-fa6b-43ea-abac-ed4ead44fb58/length.bin": "68addeef9995cb14880e132e9bab406804e212eb354840b91056605dc04220a4",
+  "data/chromedb/c205380f-fa6b-43ea-abac-ed4ead44fb58/header.bin": "1d013cadab0a515bfeea82d1038899e5de0e154c21d96831aad615311da36d83",
+  "data/chromedb/c205380f-fa6b-43ea-abac-ed4ead44fb58/index_metadata.pickle": "07e8d4a01029db6bafbae7c96f7392c570440059face0b4980cc809887f51d35",
+  "data/chromedb/03e07427-1387-4780-9390-c64ed40713fd/link_lists.bin": "39ffc4edde3e33793e591e1618668bfcaa241b61b0952d7055a561e22cb1aea0",
+  "data/chromedb/03e07427-1387-4780-9390-c64ed40713fd/data_level0.bin": "2ca8e8bd0b2b5a1cca9919a7aad6f2a5488083645a850eb348e742bb0d1646af",
+  "data/chromedb/03e07427-1387-4780-9390-c64ed40713fd/length.bin": "1e581ea8346a1fe51d6d179847340b89213f179e1dc50077c933bf2957a35a50",
+  "data/chromedb/03e07427-1387-4780-9390-c64ed40713fd/header.bin": "ef333cf50f8c9e29a8d0631281f21c9b415c9a85434f492a58bc44a012e6d057",
+  "data/chromedb/03e07427-1387-4780-9390-c64ed40713fd/index_metadata.pickle": "d1cb3103171e8f7405d5982fd499a8421b14ed17fb7b690dcaabbb1440447b0b",
+  "data/bm25_index.pkl": "43bfbbf4f62d89c71131012b84776489cf0950ca3d60ddbc9061e27fc9c892c3",
+  "data/doc_metadata.json": "261505cec13e4469e478c71e5fd692b165aeeb0d3a763ce0f02bb9b05e9ebe6f",
+  "data/Policies Metadata.xlsx": "4c2555deb7d1ae5ae2864ed914f9a13da6147654cc7591e84a79a7271808c25c"
+}

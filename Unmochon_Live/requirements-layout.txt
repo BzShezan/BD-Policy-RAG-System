@@ -1,0 +1,2 @@
+# Original LiLT training / inference dependencies. Trained checkpoints are not in the upload.
+-e .[layout,ocr,metadata]

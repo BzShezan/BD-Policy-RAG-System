@@ -1,0 +1,5 @@
+# Preserve the original UI asset bytes on Windows and Linux.
+src/unmochon_live/ui/templates/** -text
+src/unmochon_live/ui/static/** -text
+UI/templates/** -text
+UI/static/** -text

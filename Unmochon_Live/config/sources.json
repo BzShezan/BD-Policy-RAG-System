@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "policy_domains": ["dss.gov.bd", "msw.gov.bd", "moa.gov.bd", "modmr.gov.bd", "ddm.gov.bd"],
+  "services": [
+    {"id":"nid", "aliases":["nid","national identity","voter","এনআইডি","জাতীয় পরিচয়","জাতীয় পরিচয়","ভোটার"],
+     "domains":["nidw.gov.bd","ecs.gov.bd"],
+     "seeds":["https://www.nidw.gov.bd/enroll_obtaining.php","https://www.nidw.gov.bd/"]},
+    {"id":"passport", "aliases":["passport","e-passport","পাসপোর্ট"],
+     "domains":["epassport.gov.bd","dip.gov.bd"],
+     "seeds":["https://www.epassport.gov.bd/instructions/instructions","https://www.epassport.gov.bd/landing/notices/33","https://dip.gov.bd/"]},
+    {"id":"birth_registration", "aliases":["birth registration","জন্ম নিবন্ধন","জন্মনিবন্ধন"],
+     "domains":["bdris.gov.bd","orgbdr.gov.bd"],
+     "seeds":["https://orgbdr.gov.bd/"]},
+    {"id":"driving_license", "aliases":["driving licence","driving license","ড্রাইভিং লাইসেন্স"],
+     "domains":["brta.gov.bd","bsp.brta.gov.bd"],
+     "seeds":["https://brta.gov.bd/"]}
+  ]
+}

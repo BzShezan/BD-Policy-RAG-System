@@ -1,114 +1,24 @@
-# 🇧🇩 Bangladesh Policy Document Retrieval System (RAG)
+# BD Policy RAG System — Unmochon Live
 
-This repository contains the data processing pipeline for building a Retrieval-Augmented Generation (RAG) system for Bangladeshi Government Policy Documents across three ministries: Social Welfare, Agriculture, and Disaster Management.
+The merged **Unmochon Live + Original Source** application is in [`Unmochon_Live/`](Unmochon_Live/). This repository contains the original OCR-to-search source code, dataset-update tools, exact PDF clause/link feature and the existing Live interface. The original 15,019-record ChromaDB, BM25, datasets and document metadata remain private local assets.
 
-## 🏗️ Architecture
+## Run the merged application
 
-We use a **Decentralized Processing -> Centralized Storage** approach:
+Use Python **3.11 or 3.12**. After cloning, run in Windows PowerShell:
 
-1. **Decentralized:** Team members process PDFs locally using their own machines.
-2. **Shared:** Team members push the clean, lightweight `.jsonl` text files to this Git repository.
-3. **Centralized:** The project lead pulls the `.jsonl` files and builds the unified Vector Database for the LLM.
+```powershell
+cd Unmochon_Live
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e .
+python scripts/setup.py
+python -m unmochon_live doctor
+python -m unmochon_live serve
+```
 
----
+Before serving, copy your existing private `data/` folder into `Unmochon_Live/data/`, including the full `chromedb/` directory, `bm25_index.pkl`, `doc_metadata.json` and processed JSONL. Alternatively configure all relevant private data paths in `.env` as described in the full setup guide. Setup creates configuration and preserves existing data. Open http://127.0.0.1:8000 after `doctor` confirms your local assets.
 
-## 🛠️ Setup Instructions (For All Team Members)
+See the [full setup and dataset-update guide](Unmochon_Live/README.md), [Bangla starting guide](Unmochon_Live/docs/START_HERE_BN.md), [feature mapping](Unmochon_Live/docs/FEATURE_MAP.md) and [merge validation](Unmochon_Live/docs/MERGE_VALIDATION.md). Original raw policy PDFs and trained layout checkpoints were not supplied; add them at the paths documented in the setup guide.
 
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/BzShezan/BD-Policy-RAG-System.git
-   cd BD-Policy-RAG-System
-
-   ```
-
-2. **Create and Activate Virtual Environment:**
-
-   ```bash
-   python -m venv venv
-   # Windows:
-   venv\Scripts\activate
-   # Mac/Linux:
-   source venv/bin/activate
-   ```
-
-3. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Install Tesseract OCR (Required for Scanned PDFs):**
-   - Download the installer from [UB Mannheim Tesseract](https://github.com/UB-Mannheim/tesseract/wiki).
-   - **IMPORTANT:** During installation, select "Bengali" under Additional Languages.
-   - Add Tesseract to your system PATH (usually `C:\Program Files\Tesseract-OCR`).
-
----
-
-## 📂 Team Member Workflow
-
-Your job is to convert a folder of PDFs into a single, clean `.jsonl` file.
-
-1. **Place PDFs:** Put all the PDFs for your assigned ministry into the `data/raw_pdfs/` folder.
-2. **Configure Script:** Open `scripts/1_batch_pipeline.py` and update these lines at the top:
-   ```python
-   MINISTRY_TAG = "Agriculture" # Change to your ministry!
-   ```
-3. **Run the Pipeline:**
-   ```bash
-   python scripts/1_batch_pipeline.py
-   ```
-   _The script will automatically detect digital text and use OCR for scanned documents._
-4. **Check Output:** Once finished, you will find a file named `Agriculture_clauses.jsonl` (or your ministry name) in the `data/processed_jsonl/` folder.
-
-5. **Commit and Push:** Add, commit, and push that `.jsonl` file to the repository:
-   ```bash
-   git add data/processed_jsonl/Agriculture_clauses.jsonl
-   git commit -m "Add Agriculture Ministry processed clauses"
-   git push origin main
-   ```
-
----
-
-## 🚀 Project Lead Workflow
-
-Once team members have pushed their `.jsonl` files, you need to build the central search database.
-
-1. **Pull Latest Data:**
-
-   ```bash
-   git pull origin main
-   ```
-
-2. **Build Central Database:**
-
-   ```bash
-   python scripts/2_build_central_db.py
-   ```
-
-   _This reads all `.jsonl` files in `data/processed_jsonl/`, generates embeddings, and saves the database to `data/central_chroma_db/`._
-
-3. **Evaluate the Database:**
-   ```bash
-   python scripts/3_evaluate_search.py
-   ```
-   _Use this script to test Hybrid (BM25 + Dense) search queries against the central database._
-
----
-
-## ⚠️ Important Notes
-
-- **Do NOT** push raw PDFs to Git. They are too large and will break the repository. The `.gitignore` file is set up to prevent this.
-- **Do NOT** push the `central_chroma_db` folder to Git. It contains thousands of small binary files that Git handles poorly. If a teammate needs the database, they can build it locally by running `2_build_central_db.py`.
-
-````
-
-***
-
-Once you've saved this in VS Code, run these commands in your terminal to push the fix:
-
-```bash
-git add README.md
-git commit -m "Fix README formatting"
-git push origin main
-````
+The repository's earlier root-level processing scripts are retained. Previously tracked datasets are removed from the current file tree and remain in local copies; existing Git history is preserved. The previous root instructions are in [the previous README](docs/PREVIOUS_REPOSITORY_README.md). Use the merged application's instructions above for the current Live server. Database/dataset/archive files and credentials are excluded by `.gitignore`.

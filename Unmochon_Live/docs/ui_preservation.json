@@ -1,0 +1,16 @@
+{
+  "src/unmochon_live/ui/static/style.css": "c8704de302bc791eb4cbeeea221497501ffebcbed7bfa25008c8e93bc1744ccb",
+  "src/unmochon_live/ui/templates/results.html": "9d946a6ee1901a1c9939f7a49544ced9a9bb2ad1e0f87f617d3863ae3948614f",
+  "src/unmochon_live/ui/templates/index.html": "b9619216231f391ca5f8617681032485e0c3f107c86331769e1e6b5d62dc6368",
+  "src/unmochon_live/ui/static/fonts/NotoSansBengali.ttf": "dcd42978094e584a849c84a51450eeac40c8826057d566ea6d4b9627a403a05a",
+  "src/unmochon_live/ui/static/fonts/OFL.txt": "754f0e221aa7d5a915489f3bf1f20fe53ddc35ab2834a4d91656d78f9622de70",
+  "src/unmochon_live/ui/static/logo/unmochon_word.png": "ee9fa2c62459ec1b3c09eb12b566d41ebc6406c285ba4c50fe7c6bf48b0e0115",
+  "src/unmochon_live/ui/static/logo/unmochon_icon.png": "2b95c6369de1a2710011b4c397fbc38475327fd4f519aa8847bf2f8e893188f4",
+  "src/unmochon_live/ui/static/logo/unmochon_question.png": "0b0b90d0a3e5ab190a24cec00b2168e19dc9fc4ce445f0d19a57ae54ff6e93a3",
+  "src/unmochon_live/ui/static/logo/ministry_ag.png": "1c9928ef12b47272f4c97b00e5564555e7b65a7a1ea655d8e2ed498be54335e9",
+  "src/unmochon_live/ui/static/logo/unmochon_magnify.png": "5d29db28cbd639ff3bddc8dfcafdcf8393200f18edaa65f50be806d5469c9a49",
+  "src/unmochon_live/ui/static/logo/ministry_sw.png": "84d2615ce333aa259ba3f4c0ec2ebcaeb2d3cdf56990f55871e962e9e80d0302",
+  "src/unmochon_live/ui/static/logo/UNMOCHON.png": "676de1aea14c7be083c4034d3829a3599f3d97579b5b52fee11492be347552e5",
+  "src/unmochon_live/ui/static/logo/ministry_dm.png": "9eb929e61950c9288af739400cb69556f6afc7908d78b430706087b9552530cc",
+  "src/unmochon_live/ui/static/logo/FEVICON.png": "6df9a450d0493ed726f9041ef85b64e61763a1445dc8cde61182707383bd329c"
+}

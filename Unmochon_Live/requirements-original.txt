@@ -1,0 +1,61 @@
+# ============================================================
+# Unmochon - Complete requirements.txt
+# ============================================================
+# For a clean install:
+#   conda create -n chroma python=3.11 -y
+#   conda activate chroma
+#   pip install -r requirements.txt
+#
+# For GPU support (RTX 3060), install torch separately BEFORE:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu118
+# ============================================================
+
+# ---- Web framework ----
+flask==3.0.3
+
+# ---- Vector database & retrieval ----
+chromadb==1.5.9
+rank-bm25==0.2.2
+
+# ---- Embeddings & translation ----
+sentence-transformers==3.0.1
+transformers==4.44.2
+tokenizers==0.19.1
+
+# ---- PyTorch (CPU by default) ----
+# For GPU, install torch separately before this file (see header)
+torch==2.8.0
+torchvision==0.23.0
+
+# ---- LLM explanation layer (Gemini) ----
+google-generativeai==0.8.3
+
+# ---- Metadata & data handling ----
+openpyxl==3.1.5
+pandas==1.5.3
+numpy==1.24.3
+
+# ---- OCR pipeline (used during ingestion, not runtime) ----
+pymupdf==1.24.5
+pytesseract==0.3.10
+Pillow==10.3.0
+apsisocr==0.0.7
+onnxruntime==1.19.2
+fastdeploy-python==1.0.7
+bijoy2unicode==0.1.1
+
+# ---- Image processing (used for layout analysis) ----
+opencv-python==4.13.0.92
+shapely==2.0.7
+ultralytics==8.4.75
+
+# ---- Layout analysis (LiLT + XLM-R) ----
+# Note: layout analysis was in a separate conda env "layout2".
+# If your teammates only want the search UI + evaluation, they
+# can skip these. Uncomment if doing layout work.
+# datasets==2.20.0
+# accelerate==0.33.0
+
+# ---- Utilities ----
+requests==2.32.3
+tqdm==4.66.5

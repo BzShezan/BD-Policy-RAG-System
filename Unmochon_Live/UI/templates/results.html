@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>উন্মোচন | ফলাফল</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page results-page">
+
+  <div class="top-bar">
+    <form id="search-form" action="/results" method="get">
+      <a href="/" class="search-logo" aria-label="হোম">
+        <img src="/logo/unmochon_icon.png" alt="উন্মোচন">
+      </a>
+      <input
+        type="text"
+        name="q"
+        id="question-input"
+        placeholder="আপনার প্রশ্ন লিখুন..."
+        data-bn-placeholder="আপনার প্রশ্ন লিখুন..."
+        data-en-placeholder="Ask your question..."
+        autocomplete="off"
+        required>
+      <button type="submit" class="search-submit" aria-label="খুঁজুন">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+          <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <div id="answer-area" class="answer-area">
+    <div id="loading" class="loading" style="display:none;">
+      অনুসন্ধান চলছে...
+    </div>
+    <div id="results-container"></div>
+  </div>
+
+  <footer class="footer results-footer">
+    <p data-bn="বাংলাদেশ সরকারি নীতিমালার নথি থেকে সংগৃহীত তথ্য" data-en="Information sourced from official Bangladesh government policy documents">বাংলাদেশ সরকারি নীতিমালার নথি থেকে সংগৃহীত তথ্য</p>
+    <p class="lang-toggle">
+      <span data-bn="উন্মোচন এই ভাষায় পাওয়া যায়:" data-en="Unmochon is also available in:">উন্মোচন এই ভাষায় পাওয়া যায়:</span>
+      <a href="#" id="lang-toggle-link">English</a>
+    </p>
+  </footer>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

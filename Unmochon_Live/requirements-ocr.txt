@@ -1,0 +1,4 @@
+# Original OCR pipeline. Also install Tesseract with ben + eng language data.
+-e .[ocr]
+# ApsisOCR remains an optional original fallback, installed separately if needed.
+# See requirements-original.txt for original ApsisOCR/FastDeploy versions.

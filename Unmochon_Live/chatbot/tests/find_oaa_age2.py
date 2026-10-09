@@ -1,0 +1,15 @@
+from original_paths import project_path
+import json
+
+path = project_path('data/processed_jsonl/Social_Welfare_clauses.jsonl')
+with open(path, encoding="utf-8") as f:
+    clauses = [json.loads(l) for l in f if l.strip()]
+
+matches = [c for c in clauses if c.get("doc_id") == "SocialMin_OldAgeAll_2013_00_Policy_v1.pdf"
+           and ("৬৫" in c.get("text","") or "৬২" in c.get("text",""))]
+
+for c in matches[:10]:
+    print(f"clause_id: {c['clause_id']}")
+    print(f"page: {c['page_number']}")
+    print(c['text'])
+    print("---")
