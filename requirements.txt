@@ -1,0 +1,2 @@
+# Installs the merged application and original runtime models. Use Python 3.11/3.12.
+-e .

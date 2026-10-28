@@ -1,0 +1,2 @@
+[console_scripts]
+unmochon-live = unmochon_live.cli:main

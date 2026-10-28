@@ -1,0 +1,20 @@
+..............................ssss.s.s...............................ss. [ 45%]
+......................ssssssss.......................................... [ 91%]
+.....sss......                                                           [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_original_merge.py:53: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_original_merge.py:59: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_original_merge.py:71: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_original_merge.py:77: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_original_merge.py:96: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_original_merge.py:116: Real original index omitted from code-only snapshot; do not create an empty collection
+SKIPPED [1] tests/test_pipeline.py:133: Original corpus JSONL omitted from code-only snapshot
+SKIPPED [1] tests/test_pipeline.py:141: Original corpus JSONL omitted from code-only snapshot
+SKIPPED [1] tests/test_stage4_dynamic_adapter.py:41: Original Stage4 snapshot absent; set STAGE4_PACKAGE
+SKIPPED [5] tests/test_stage4_dynamic_adapter.py:53: Original Stage4 snapshot absent; set STAGE4_PACKAGE
+SKIPPED [1] tests/test_stage4_dynamic_adapter.py:79: Original Stage4 snapshot absent; set STAGE4_PACKAGE
+SKIPPED [1] tests/test_stage4_dynamic_adapter.py:85: Original Stage4 snapshot absent; set STAGE4_PACKAGE
+SKIPPED [1] tests/test_ui.py:96: Original binary asset omitted from code-only snapshot: /logo/unmochon_icon.png
+SKIPPED [1] tests/test_ui.py:96: Original binary asset omitted from code-only snapshot: /logo/unmochon_word.png
+SKIPPED [1] tests/test_ui.py:96: Original binary asset omitted from code-only snapshot: /static/fonts/NotoSansBengali.ttf
+139 passed, 19 skipped in 57.18s

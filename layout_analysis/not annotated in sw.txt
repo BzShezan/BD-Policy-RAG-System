@@ -1,0 +1,55 @@
+
+(bbocr) G:\>python G:\BD-Policy-RAG-System\layout_analysis\debugging\check_missing_docs.py
+total raw PDFs: 102
+documents with labeled pages: 55
+missing entirely: 47
+
+  2025.07.17-495- ছোট মনি নিবাসসমাজসেবা কার্যালয়ের অনুকূলে নগদ মজুরি ও বেতন খাতে অর্থ বরাদ্দ ও মঞ্জুরি প্রদান
+  2025.07.17-501-শিশু উন্নয়ন সমাজসেবা কার্যালয়ের অনুকূলে নগদ মজুরি ও বেতন খাতে অর্থ বরাদ্দ ও মঞ্জুরি প্রদা
+  SW_ANOGROSHOR_bishesh_bhata_23-24
+  SW_ANOGROSHOR_bishesh_bhata_24-25
+  SW_ANOGROSHOR_prshikkhon_24-25
+  SW_ANOGROSHOR_shiksha_upobritti_23-24
+  SW_ANOGROSHOR_shiksha_upobritti_24-25
+  SW_DEPR_Hijra_2026_05_Webpage_v2
+  SW_DEPR_hijra_2026_05_Webpage_v1
+  SW_HSS_2020_00_Policy_v1
+  SW_HSS_2025_05_Webpage_v1
+  SW_INST_2002_09_Policy_v1
+  SW_INST_2003_03_Policy_v1
+  SW_INST_2009_00_Policy_v1
+  SW_INST_2011_06_Policy_v1
+  SW_INST_2015_00_Policy_v1
+  SW_INST_orphange_2009_00_Policy_v1
+  SW_LOAN_2005_00_Policy_v1
+  SW_LOAN_2013_12_Policy_v1
+  SW_MED_2018_08_Policy_v1
+  SW_MED_2019_10_Gazette_v1
+  SW_MED_2026_04_Webpage_v1
+  SW_MULTI_2005_12_Policy_v1
+  SW_MULTI_2023_00_Report_v1
+  SW_MULTI_2024_04_Circular_v1
+  SW_MULTI_2024_06_Report_v1
+  SW_MULTI_2025_00_Report_v1
+  SW_MULTI_2025_00_Report_v2
+  SW_MULTI_2025_00_Report_v3
+  SW_MULTI_2025_06_Policy_v1
+  SW_MULTI_2025_10_Circular_v1
+  SW_MULTI_2025_10_Circular_v2
+  SW_MULTI_2026_04_Circular_v1
+  SW_OAA_2014_02_Gazette_v1
+  SW_RSS_2025_08_Circular_v1
+  SW_RSS_2026_04_Webpage_v1
+  SW_Tea Workers_2013_00_Policy_v1
+  SW_Tea Workers_2013_00_Policy_webpage
+  SW_UCD_2019_00_Policy_v1
+  SW_WA_2026_02_Circular_v1
+  SW_Widow_application_form
+  SW_humBenefit_2022_09_Gazette_v1
+  SW_old_widow_2024_11_Circular_v1
+  SW_women dev_2011_00_Law_v1
+  বকেয়া বেতন ভাতাদি বরাদ্দ ও মঞ্জরি
+  বেদে অনগ্রসর_প্রশিক্ষণ_24-25
+  বেদে অনগ্রসর_বিশেষ ভাতা_24-25
+
+(bbocr) G:\>

@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: unmochon-live
+Version: 0.2.0
+Summary: Original Unmochon hybrid RAG engine with the unchanged Live visual shell
+Requires-Python: <3.13,>=3.11
+Requires-Dist: fastapi<1,>=0.115
+Requires-Dist: uvicorn<1,>=0.30
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: python-dotenv<2,>=1
+Requires-Dist: pydantic<3,>=2
+Requires-Dist: flask<4,>=3
+Requires-Dist: chromadb==1.5.9
+Requires-Dist: rank-bm25==0.2.2
+Requires-Dist: sentence-transformers==3.0.1
+Requires-Dist: transformers==4.44.2
+Requires-Dist: sentencepiece<1,>=0.2
+Requires-Dist: torch==2.8.0
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: filelock<5,>=3
+Requires-Dist: beautifulsoup4<5,>=4.12
+Provides-Extra: test
+Requires-Dist: pytest<10,>=8; extra == "test"
+Provides-Extra: ocr
+Requires-Dist: PyMuPDF<2,>=1.24; extra == "ocr"
+Requires-Dist: pytesseract<1,>=0.3.10; extra == "ocr"
+Requires-Dist: Pillow<13,>=10; extra == "ocr"
+Requires-Dist: bijoy2unicode>=0.1; extra == "ocr"
+Provides-Extra: layout
+Requires-Dist: datasets<4,>=2.20; extra == "layout"
+Requires-Dist: accelerate<2,>=0.33; extra == "layout"
+Requires-Dist: opencv-python<5,>=4.10; extra == "layout"
+Requires-Dist: shapely<3,>=2; extra == "layout"
+Requires-Dist: ultralytics<9,>=8; extra == "layout"
+Provides-Extra: metadata
+Requires-Dist: openpyxl<4,>=3.1; extra == "metadata"
+Requires-Dist: pandas<3,>=2; extra == "metadata"
+Provides-Extra: explanation
+Requires-Dist: google-generativeai==0.8.3; extra == "explanation"

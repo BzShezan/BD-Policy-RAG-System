@@ -1,0 +1,16 @@
+{
+  "platform": "Linux; Python 3.12",
+  "dependencies": {
+    "pytest": "9.1.1",
+    "fastapi": "0.147.0",
+    "httpx": "0.28.1",
+    "chromadb": "1.5.9",
+    "rank-bm25": "0.2.2",
+    "numpy": "2.3.5",
+    "PyMuPDF": "1.26.6",
+    "filelock": "4.2.4"
+  },
+  "embedding_model": "synthetic 384-D fixture only; production pinned local model NOT tested",
+  "live_http": "synthetic FixtureTransport; no application government crawl",
+  "windows_runtime": "not executed"
+}

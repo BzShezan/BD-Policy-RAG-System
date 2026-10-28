@@ -1,0 +1,156 @@
+(chroma) G:\BD-Policy-RAG-System\scripts\retrieval>python test_search.py
+loading retriever ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 6368.44it/s]
+  ready, 15019 items indexed
+
+======================================================================
+query: বয়স্ক ভাতা প্রাপ্তির যোগ্যতা
+filters: {'ministry': 'Social Welfare'}
+======================================================================
+
+[1] rrf=0.0246 | dense+bm25
+    Social Welfare | SociaMin_Widow_2025_09_25_webpage_v1 | page 3
+    ৭. বাছাই কমিটি কর্তৃক নির্বাচিত হতে হবে।
+ 
+ভাতা প্রাপ্তির অযোগ্যতা:
+
+[2] rrf=0.0164 | dense
+    Social Welfare | SocialMin_OldAgeAll_2013_00_Policy_v1.pdf | page 18
+    ১. বয়স্কভাতা প্রদান কার্যক্রম এর অগ্রগতি তদারকিকরণ;
+
+[3] rrf=0.0164 | bm25
+    Social Welfare | SocialMin_OldAgeAll_2013_00_Policy_v1.pdf | page 11
+    (পরিশিষ্ট-৬) সংরক্ষণ করবেন। ভাতা গ্রহণের জন্য নির্বাচিত বয়স্ক ব্যক্তির মধ্যে যদি কেউ
+মৃত্যুবরণ করেন, তার স্থলে অপেক্ষমান তালিকা থেকে অগ্রাধিকার ক্রমানুযায়ী নতুন একজনকে
+তালিকাভূক্
+
+[4] rrf=0.0161 | dense
+    Social Welfare | SW_DA_2026_02_Circular_chottogram | page 17
+    প্রতিবন্ধী ভাতা ও শিক্ষা কার্যক্রমের আওতায় প্রতিবন্ধী ভাতার বরাদ্দ বিভাজন
+
+[5] rrf=0.0161 | bm25
+    Social Welfare | SociaMin_Widow_2025_09_25_Gazette_v1 | page 5
+    ২. সামাজিক অবস্থার ক্ষেত্রে: শিশু সন্তান রয়েছে এমন বিধবা / স্বামী নিগৃহীতা, পরিবার
+থেকে বিচ্ছিন, নিঃসন্তান মহিলাদের ক্রমানুসারে অগ্রাধিকার দিতে হবে।
+৯.০ ভাতা প্রাপ্তির যোগ্যতা ও শ
+
+======================================================================
+query: widow allowance eligibility
+filters: {'ministry': 'Social Welfare'}
+======================================================================
+
+[1] rrf=0.0328 | dense+bm25
+    Social Welfare | SocialmMin_Widow_2013_00_Policy_v1 | page 1
+    গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+বিধবা ও স্বামী 9ROG দুঃস্থ মহিলাদের ভাতা প্রদান কর্মসূচি বাস্তবায়ন নীতিমালা
+(সংশোধিত)
+Implementation Manual for Allowances to the Husband
+Deserted Des
+
+[2] rrf=0.0300 | dense+bm25
+    Social Welfare | SW_DEPR_2025_05_Policy_v1 | page 25
+    পরিশিষ্ট- ঞ
+অনগ্রসর সুবিধাভোগীর কার্ড
+কার্ড নম্বর (এমআইএস নম্বর)
+Government of the People’s Republic of Bangladesh
+gin. Department of Social Services,
+©) Ministry of Social Welfare
+
+[3] rrf=0.0161 | dense
+    Social Welfare | SocialMin_OldAgeAll_2013_00_Policy_v1.pdf | page 1
+    গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+বয়স্কভাতা কর্মসূচি বাস্তবায়ন নীতিমালা
+(সংশোধিত)
+Implementation Manual for Old Age
+Allowances programme
+(Revised)
+সমাজসেবা অধিদফতর
+সমাজকল্যাণ মন্ত্রণ
+
+[4] rrf=0.0161 | bm25
+    Social Welfare | SW_INST_2003_03_Policy_v1 | page 11
+    &
+নিবাস স্থাপন করা হচেছে। নিম্নে ছোটমণি নিবাসের অবস্থান ও আসন সংখ্যা
+৫.০. ছোটমণি নিবাসে ভর্তির যোগ্যতা ও ব্যবস্থা (Eligibility Criterion
+and Admission Procedure) 8
+সাধারণতঃ 0-9 বছর
+
+[5] rrf=0.0159 | dense [TABLE]
+    Social Welfare | SW_MULTI_2025_00_Report_v1 | page 13
+    (3) To ensure gender equality by women
+empowerment;
+(4) To provide child protection and elderly
+care.
+FDMN (Component-02)
+(1) Capacity development of FDMN
+through life skills & voc
+
+======================================================================
+query: বিধবা ভাতার আয়সীমা কত
+filters: {'ministry': 'Social Welfare'}
+======================================================================
+
+[1] rrf=0.0240 | dense+bm25
+    Social Welfare | SW_teaWorker_2025_06_Report_v1 | page 93
+    ৩. আপনার প্রদিনের আয় কত? বা মাসে আপনি কত টাকা বেতন
+পান?
+
+[2] rrf=0.0235 | dense+bm25
+    Social Welfare | SW_teaWorker_2025_06_Report_v1 | page 95
+    ১২. | এপর্যন্ত আপনি কত টাকা সঞ্চয় করেছেন? ১০০ ০০০০০০০০০০০ টাকা
+
+[3] rrf=0.0198 | dense+bm25
+    Social Welfare | SW_DA_2013_00_Policy_v1 | page 28
+    > | অসচ্ছল ভাতার পরিমাণ : টাকা ....................., কথায় £.....,,১০০০,০০০০০০০০০০০০০০০০০০০০০০০০০০০,
+মাসের নাম মাসিক প্রদেয় টাকার টাকা ভাতাগ্রহীতার ভাতা পরিশোধ
+(যে মাসের ভাতা | ভ
+
+[4] rrf=0.0164 | dense
+    Social Welfare | SW_DEPR_Bede, Dalit, AND Harijan_2013_00_Policy_v3 | page 11
+    ৫. প্রার্থীর বার্ষিক গড় আয় £ অনূর্ধ্ব ৩৬,০০০ (Bat হাজার) টাকা হতে হবে;
+
+[5] rrf=0.0164 | bm25
+    Social Welfare | SW_old_widow_2024_11_Circular_v1 | page 58
+    ২০২৪-২৫ অর্থবছরে বয়স্ক ভাতা এবং বিধবা ও স্বামী নিগৃহিতা ভাতা কর্মসুচি'র বর্ষিত ইউনিয়ন/
+গ্গোরসভাজিক্সিক বরাদ্দ বিভাজন
+Tee ভাতার বিধৰা ছাতার
+hal
+Ea Cn a জজ
+ঢাকা রাজবাড়ী [argent ee
+
+======================================================================
+query: সার ডিলার নিয়োগের শর্ত
+filters: {'ministry': 'Agriculture'}
+======================================================================
+
+[1] rrf=0.0164 | dense
+    Agriculture | কৃষি মন্ত্রণালয়ের বার্ষিক প্রতিবেদন ২০২১-২২ | page 292
+    =) a
+পরিকল্পনা কমিশনের অতিরিক্ত সচিব মহোদয়গণ কর্তৃক রংপুর জেলার মিঠাপুকুর উপজেলায় খননকৃত শালমারা খাল পরিদর্শন
+
+[2] rrf=0.0164 | bm25
+    Agriculture | 013-057 | page 27
+    গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+কৃষি মন্ত্রণালয়
+কৃষি অর্থনীতি গবেষণা (এইআর) অধিশাখা
+বাংলাদেশ সচিবালয়, ঢাকা।
+ওয়েব সাইট 8 www.moa.gov.bd
+; ,০২ আগস্ট ২০০৯খিঃ
+নং কৃষি/এইআর/৫৯৯/২০০৯/৬৮
+
+[3] rrf=0.0161 | dense
+    Agriculture | 444-452 | page 2
+    ১০. ইনস্টিটিউট-এর প্রতিনিধিত করিবেন এবং যেখানে ব্যক্তিগতভাবে প্রতিনিধিতু সম্ভব নয় সেখানে
+তাহার পক্ষে প্রতিনিধি মনোনীত করিতে পারিবেন।
+
+[4] rrf=0.0161 | bm25
+    Agriculture | সার ডিলার নিয়োগ ও সার বিতরণ সংক্রান্ত সমন্বিত নীত | page 6
+    ২। ডিলার নিয়োগ বিজ্ঞপ্তি ২.১ ডিলার শূন্য থাকা সাপেক্ষে কোনো ডিলার ইউনিটের বিপরীতে নতুন ডিলার নিয়োগের ক্ষেত্রে জেলা সার ও বীজ ২.২ এছাড়া বহুল প্রচারের লক্ষ্যে জেলাপ্রশাসকের কার্যা
+
+[5] rrf=0.0159 | dense
+    Agriculture | 444-452 | page 2
+    ৪. Pa সময়ে সরকার See জারীকৃত আইন অধ্যাদেশ, বিধি বিধান এবং নির্দেশনাবলী অনুযায়ী
+বিভাগীয় প্রশাসন এবং ইনস্টিটিউটের কার্যাবলী বাস্তবায়ন করার জন্য দায়বদ্ধ থাকিবেন।
+
+(chroma) G:\BD-Policy-RAG-System\scripts\retrieval>

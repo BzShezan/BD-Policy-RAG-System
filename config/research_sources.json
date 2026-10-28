@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "scope": "exact_hosts_only_fresh_consent_required",
+  "ministries": [
+    {
+      "name": "Social Welfare",
+      "government_hosts": [
+        "msw.gov.bd",
+        "dss.gov.bd"
+      ],
+      "seed_urls": [
+        "https://msw.gov.bd/pages/policies"
+      ],
+      "storage_rules": [],
+      "programs": [
+        {
+          "id": "old_age",
+          "aliases": [
+            "old age",
+            "old-age",
+            "বয়স্ক",
+            "বয়স্ক"
+          ]
+        },
+        {
+          "id": "bede_dalit_harijan",
+          "aliases": [
+            "বেদে",
+            "দলিত",
+            "হরিজন",
+            "dalit",
+            "harijan",
+            "bede"
+          ]
+        },
+        {
+          "id": "tea_workers",
+          "aliases": [
+            "চা শ্রমিক",
+            "চা-শ্রমিক",
+            "tea workers"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://msw.gov.bd/pages/policies",
+          "checked_at": "2026-10-13",
+          "basis": "Existing Stage 3 REGISTRY_VERIFICATION.md; original exact government roots retained"
+        }
+      ]
+    },
+    {
+      "name": "Agriculture",
+      "government_hosts": [
+        "moa.gov.bd",
+        "dam.gov.bd"
+      ],
+      "seed_urls": [
+        "https://moa.gov.bd/pages/policies"
+      ],
+      "storage_rules": [
+        {
+          "host": "objectstorage.ap-dcc-gazipur-1.oraclecloud15.com",
+          "path_prefix": "/n/axvjbnqprylg/b/V2Ministry/o/office-moa/",
+          "government_referrer_hosts": [
+            "moa.gov.bd"
+          ],
+          "authority_page": "https://moa.gov.bd/"
+        }
+      ],
+      "programs": [
+        {
+          "id": "agricultural_marketing",
+          "aliases": [
+            "কৃষি বিপণন",
+            "agricultural marketing"
+          ]
+        },
+        {
+          "id": "agriculture",
+          "aliases": [
+            "কৃষক",
+            "কৃষি মন্ত্রণালয়",
+            "agriculture"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://moa.gov.bd/pages/policies",
+          "checked_at": "2026-10-13",
+          "basis": "Existing Stage 3 REGISTRY_VERIFICATION.md; original exact government roots retained"
+        }
+      ]
+    },
+    {
+      "name": "Disaster Management",
+      "government_hosts": [
+        "modmr.gov.bd",
+        "ddm.gov.bd"
+      ],
+      "seed_urls": [
+        "https://modmr.gov.bd/"
+      ],
+      "storage_rules": [
+        {
+          "host": "objectstorage.ap-dcc-gazipur-1.oraclecloud15.com",
+          "path_prefix": "/n/axvjbnqprylg/b/V2Ministry/o/office-modmr/",
+          "government_referrer_hosts": [
+            "modmr.gov.bd"
+          ],
+          "authority_page": "https://modmr.gov.bd/"
+        }
+      ],
+      "programs": [
+        {
+          "id": "vgf",
+          "aliases": [
+            "vgf",
+            "ভিজিএফ"
+          ]
+        },
+        {
+          "id": "disaster",
+          "aliases": [
+            "দুর্যোগ",
+            "disaster"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://modmr.gov.bd/",
+          "checked_at": "2026-10-13",
+          "basis": "Existing Stage 3 REGISTRY_VERIFICATION.md; original exact government roots retained"
+        }
+      ]
+    },
+    {
+      "name": "Election Commission",
+      "government_hosts": [
+        "nidw.gov.bd",
+        "ecs.gov.bd",
+        "services.nidw.gov.bd",
+        "ec.shariakandi.bogra.gov.bd"
+      ],
+      "seed_urls": [
+        "https://ec.shariakandi.bogra.gov.bd/pages/static-pages/697f79d435ce18e1c06b5dfd",
+        "https://www.nidw.gov.bd/enroll_obtaining.php",
+        "https://ecs.gov.bd/"
+      ],
+      "storage_rules": [],
+      "programs": [
+        {
+          "id": "nid",
+          "aliases": [
+            "nid",
+            "national identity",
+            "voter",
+            "এনআইডি",
+            "জাতীয় পরিচয়",
+            "জাতীয় পরিচয়",
+            "ভোটার"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://ecs.gov.bd/",
+          "checked_at": "2026-10-19",
+          "basis": "Official authority site and linked service; see docs/REGISTRY_AUTHORITY.md"
+        },
+        {
+          "url": "https://ec.shariakandi.bogra.gov.bd/pages/static-pages/697f79d435ce18e1c06b5dfd",
+          "checked_at": "2026-10-19",
+          "basis": "Official local Election Office: new voter registration instruction page, links services.nidw.gov.bd; local jurisdiction retained in source title."
+        }
+      ]
+    },
+    {
+      "name": "Department of Immigration and Passports",
+      "government_hosts": [
+        "epassport.gov.bd",
+        "dip.gov.bd"
+      ],
+      "seed_urls": [
+        "https://www.epassport.gov.bd/instructions/instructions",
+        "https://dip.gov.bd/"
+      ],
+      "storage_rules": [],
+      "programs": [
+        {
+          "id": "passport",
+          "aliases": [
+            "passport",
+            "পাসপোর্ট"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://dip.gov.bd/",
+          "checked_at": "2026-10-19",
+          "basis": "Official authority site and linked service; see docs/REGISTRY_AUTHORITY.md"
+        }
+      ]
+    },
+    {
+      "name": "Registrar General Birth and Death Registration",
+      "government_hosts": [
+        "orgbdr.gov.bd",
+        "bdris.gov.bd"
+      ],
+      "seed_urls": [
+        "https://orgbdr.gov.bd/"
+      ],
+      "storage_rules": [],
+      "programs": [
+        {
+          "id": "birth_registration",
+          "aliases": [
+            "birth registration",
+            "জন্ম নিবন্ধন",
+            "জন্মনিবন্ধন"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://orgbdr.gov.bd/",
+          "checked_at": "2026-10-19",
+          "basis": "Official authority site and linked service; see docs/REGISTRY_AUTHORITY.md"
+        }
+      ]
+    },
+    {
+      "name": "Bangladesh Road Transport Authority",
+      "government_hosts": [
+        "brta.gov.bd",
+        "bsp.brta.gov.bd"
+      ],
+      "seed_urls": [
+        "https://brta.gov.bd/"
+      ],
+      "storage_rules": [],
+      "programs": [
+        {
+          "id": "driving_license",
+          "aliases": [
+            "driving license",
+            "driving licence",
+            "ড্রাইভিং লাইসেন্স"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "url": "https://brta.gov.bd/",
+          "checked_at": "2026-10-19",
+          "basis": "Official authority site and linked service; see docs/REGISTRY_AUTHORITY.md"
+        }
+      ]
+    }
+  ]
+}
