@@ -348,12 +348,11 @@ Cloudflare Tunnel can expose the local app to a temporary public URL without dep
 Open PowerShell in the repository root:
 
 ```powershell
-conda activate unmochon_stage1
-$env:PYTHONPATH = "$PWD\src"
-$env:PYTHONIOENCODING = "utf-8"
-$env:PYTHONUTF8 = "1"
+$env:API_KEY = python -c "import secrets; print(secrets.token_urlsafe(32))"
 
-python -m unmochon_live serve
+Write-Host "Unmochon demo access key: $env:API_KEY"
+
+python .\run_unmochon.py
 ```
 
 If the current checkout uses `run_unmochon.py` instead, use that verified launcher. Wait until the server reports that it is running locally.
